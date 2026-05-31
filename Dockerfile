@@ -2,7 +2,7 @@ FROM quay.io/keycloak/keycloak:latest
 
 ENV KC_DB=postgres
 
-# Only use RUN for commands that must happen DURING the build
+# Only use RUN for commands that must happen DURING the build jjf
 RUN /opt/keycloak/bin/kc.sh build
 
 # ENTRYPOINT is for commands that happen WHEN THE CONTAINER STARTS
