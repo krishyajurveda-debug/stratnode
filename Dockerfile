@@ -1,4 +1,3 @@
-#Narasimham Devarakonda
 FROM quay.io/keycloak/keycloak:latest
 
 # Bake the DB type into the build
