@@ -7,4 +7,4 @@ ENV KC_DB=postgres
 RUN /opt/keycloak/bin/kc.sh build
 
 # Add --http-enabled=true and --proxy-headers=xforwarded
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized", "--http-enabled=true", "--proxy-headers=xforwarded", "--hostname-strict=false"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized", "--hostname-strict=false"]
